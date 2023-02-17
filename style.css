@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(240, 78%, 98%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+ 
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-container {
+    display: flex;
+    height: 370px;
+    margin-top: 150px;
+    
+}
+.left-container {
+    background-color: white;
+    width: 220px;
+    padding-top: 20px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+   
+}
+.middle-container {
+    background-color: hsl(236, 72%, 79%) ;
+    width: 220px;
+    padding-top: 20px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    color:hsl(240, 78%, 98%) ;
+    
+    
+}
+.right-container {
+    background-color: white;
+    width: 220px;
+    padding-top: 20px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+    
+}
+hr {
+    margin-bottom: 15px;
+}
+p {
+    margin-bottom: 4px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+.left-container  button {
+    background-color: hsl(236, 76%, 79%);
+    color: hsl(240, 78%, 98%);
+    
+}
+.right-container  button {
+    background-color: hsl(236, 76%, 79%);
+    color: hsl(240, 78%, 98%);
+    
+}
+.middle-container button {
+    color:hsl(233, 13%, 49%); 
+    background-color:white ;
+}
+span {
+    font-size: 30px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.toggle {
+    display: flex;
+    padding-top: 50px;
+    
+}
+.toggle-btn {
+    margin: 0 1rem;
+}
+.checkbox {
+    display: none;
+}
+.sub {
+    background-color: hsl(236, 76%, 79%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 0.8rem;
+    width: 2rem;
+    border-radius: 1.6rem;
+    padding: 0.2rem;
+}
+.circle {
+    background-color: white;
+    height: 0.8rem;
+    width: 1.1rem;
+    border-radius: 50%;
+}
+.checkbox:checked + .sub {
+    justify-content: flex-end;
+}
+header h1 {
+    padding-top: 20px;
+}
+.left-container button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: hsl(236, 76%, 79%);
+    border: 1px solid black;
+}
+.right-container button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: hsl(236, 76%, 79%);
+    border: 1px solid black;
+}
+.middle-container button:hover {
+    background-color: hsl(236, 76%, 79%);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.sub:hover {
+    cursor: pointer;
+}
+.yearly {
+    display: block;
+}
+.monthly {
+    display: none;
+}
+
+
+
+@media (max-width:480px) {
+    
+    main {
+        width: 20%;
+        padding-right: 50px;
+    }
+    .main-container{
+        flex-direction: column;  
+        margin-top: 50px;
+    }
+
+    .middle-container{
+        transform: none;
+        margin-bottom: 20px;
+    }
+    .left-container {
+        margin-bottom: 20px;
+    
+    }
+    header h1 {
+        padding-top: 7px;
+    }
+    .toggle {
+        padding-top: 15px;
+    }
+}
